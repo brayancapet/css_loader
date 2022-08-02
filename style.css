@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    height: 120px;
+    width: 120px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    border: 15px solid #ccc;
+    border-top : 15px solid #25242a;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
